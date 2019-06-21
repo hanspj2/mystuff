@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item1"
+        android:title="a-z"
+        android:background="#ff00">
+        A-Z
+    </item>
+
+    <item
+        android:id="@+id/item2"
+        android:title="Store"
+        android:background="#ff00">
+        Store
+    </item>
+    <item
+        android:id="@+id/item3"
+        android:title="Price"
+        android:background="#ff00">
+        Vendor
+    </item>
+</menu>

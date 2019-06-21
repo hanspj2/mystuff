@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+.btn {
+  display: flex;
+  background-color: transparent;
+  color: salmon;
+  border: 3px solid salmon;
+  padding: .5rem 1rem;
+  cursor: pointer; }
+  .btn:hover {
+    background-color: salmon;
+    color: #000000; }
+
+h1 {
+  color: #000000; }
+
+body {
+  padding: 50px;
+  font: 14px "Lucidia Grande", Helvetica, Arial, sans-serif;
+  font-style: bold;
+  color: salmon; }
+
+a {
+  color: #00B7FF; }
+
+p {
+  font-style: bold; }
+
+/* Clear floats after the columns */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNjc3MvZ2xvYmFscy9fcmVzZXQuc2NzcyIsInNjc3MvY29tcG9uZW50cy9fYnV0dG9ucy5zY3NzIiwic2Nzcy9nbG9iYWxzL19jb2xvcnMuc2NzcyIsInNjc3MvbWFpbi5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBQ0Usc0JBQXNCO0VBQ3RCLFVBQVU7RUFDVixTQUFTLEVBQUE7O0FDSFg7RUFDRSxhQUFhO0VBQ2IsNkJBQTZCO0VBQzdCLGFDSG9CO0VESXBCLHdCQ0pvQjtFREtwQixtQkFBbUI7RUFDbkIsZUFBZSxFQUFBO0VBTmpCO0lBU0ksd0JDVGtCO0lEVWxCLGNDWGtCLEVBQUE7O0FDTXRCO0VBQ0UsY0RQb0IsRUFBQTs7QUNVdEI7RUFDRSxhQUFhO0VBQ2IseURBQXlEO0VBQ3pELGdCQUFnQjtFQUNoQixhRGJvQixFQUFBOztBQ2dCdEI7RUFDRSxjQUFjLEVBQUE7O0FBR2hCO0VBQ0UsZ0JBQWdCLEVBQUE7O0FBSWxCLG1DQUFBIiwiZmlsZSI6Im1haW4uY3NzIn0= */

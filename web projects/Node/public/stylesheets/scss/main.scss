@@ -1,0 +1,28 @@
+
+@import 'globals/reset';
+@import 'globals/colors';
+@import 'components/buttons';
+
+
+h1 {
+  color: $color_white;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucidia Grande", Helvetica, Arial, sans-serif;
+  font-style: bold;
+  color: $color_salmon;
+}
+
+a {
+  color: #00B7FF;
+}
+
+p {
+  font-style: bold;
+}
+
+
+/* Clear floats after the columns */
+

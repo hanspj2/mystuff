@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mystyles.css') }}">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>{{ title }}</title>
+
+
+  </head>
+  <body>
+
+    {% include 'Navigation.html' %}
+
+      <div class="container">
+
+        
+
+              <div class="row">     
+              </div>
+              <div class="row">    
+              </div>
+              <div class="row">     
+              </div>
+              <div class="row">     
+              </div>
+
+              <div class="p-3 mb-2 bg-light text-dark">
+              <div class="col align-self-center">
+              
+              <div class="text-center">
+                         <h2>Documentation</h2> 
+              </div>
+              <div class="text-left">
+		<h3>General information</h3>
+		<p>Flask runs on 10.25.137.142:80</p>
+		<p>Flask runs with "sudo python3 app.py"</p>
+		<p>Node runs on 10.25.137.142:3000</p>
+		<p>Node runs with "npm run dev"</p>"
+		<p>D3 Axis labels are invisible due to the way country text is rendered</p>
+		<h3>API</h3>
+		<p>/loaddata in flask to re read all csvs into database if something goes wrong</p>
+              	<p>List countries<br>
+		GET /country - list all countries<br>
+		GET /country/optional:countryname - list a specific country<br>
+		<br>
+		Optional parameters<br>
+		country (string) country name used to specify a single country<br>
+		<br>
+		Example usage<br>
+		GET /country<br>
+		returns<br>
+		[<br>
+    			{<br>	 
+        		id: "123", <br>
+        		name: "agraba", <br>
+        		data <br>
+				{<br>
+					population_total {<br>
+						1980 : 150000,<br>
+						1981 : 150000,<br>
+					}<br>
+					life_expectancy_years {<br>
+						1980 : 55,<br>
+						1981 : 55<br>
+					}<br>
+					income_per_person_gdppercapita_ppp_inflation_adjusted : 30000 {<br>
+						1980 : 40000,<br>
+						1981 : 40500<br> 		
+                  		},<br>
+    			{,<br>
+        		id: "456",<br>
+       		 	name: "Australia",<br>
+        		data <br>
+				{   <br>
+					population_total {<br>
+						1980 : 150000,<br>
+						1981 : 150000,<br>
+					}<br>
+					life_expectancy_years {<br>
+						1980 : 55,<br>
+						1981 : 55<br>
+					}<br>
+					income_per_person_gdppercapita_ppp_inflation_adjusted : 30000 {<br>
+						1980 : 40000,<br>
+						1981 : 40500<br>
+					}    		<br>
+                  		},<br>
+    			{,<br>
+
+    			}<br>
+		]	<br>
+			<br>
+		GET /country/australia<br>
+		returns<br>
+		d: "456",<br>
+                        name: "Australia",<br>
+                        data <br>
+                                {   <br>
+                                        population_total {<br>
+                                                1980 : 150000,<br>
+                                                1981 : 150000,<br>
+                                        }<br>
+                                        life_expectancy_years {<br>
+                                                1980 : 55,<br>
+                                                1981 : 55<br>
+                                        }<br>
+                                        income_per_person_gdppercapita_ppp_inflation_adjusted : 30000 {<br>
+                                                1980 : 40000,<br>
+                                                1981 : 40500<br>
+                                        }               <br>
+                                },<br>
+                        {,<br>
+
+                        }<br>
+                ]       <br>
+	}</p>   <br>
+	<p>unimplemented  API are edit countries (PUT) and delete country (DELETE)
+	      </div> 
+    
+</div>
+  </body>
+</html>

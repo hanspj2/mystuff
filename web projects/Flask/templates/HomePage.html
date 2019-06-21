@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mystyles.css') }}">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>{{ title }}</title>
+    
+
+  </head>
+  <body>
+
+    {% include 'Navigation.html' %}
+
+      <div class="container">
+
+        
+		<div class "row">
+			<input name="mySlider" class="slider" type="range" min="1800" max="2010" id="myRange" value="1800">
+			<p>Year: <span id="demo"></span></p>
+		</div>
+		<div class>	
+		</div>
+		<svg></svg>
+              
+             
+              <div class="row">     
+              </div>
+              <div class="row">     
+              </div>
+
+              <div class="col align-self-center">
+              
+                <div class="text-center">
+                            <!--<img src="https://themefisher.com/wp-content/uploads/edd/2017/10/Airspace-AgencyBusiness-Website-Template.png" class="img-fluid" alt="...">-->
+                </div>
+
+              </div>
+
+          
+    
+      </div>
+
+  </body>
+
+  <script type="text/javascript" src="{{ url_for('static',filename='myjavascript.js') }}"></script>
+</html>
